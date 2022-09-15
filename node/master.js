@@ -46,8 +46,8 @@ function readUserInput(question) {
                 // 数字ではない場合
                 console.log("It's not digits.");
                 continue;
-			} else if (digits == 0) {
-                // 0000の場合
+			} else if (val.match(/0/)) {
+                // 0を含む場合
 				console.log("Zero is out of range");
 				continue;
             }

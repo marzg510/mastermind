@@ -22,6 +22,7 @@ while True:
             print('It is not 4 digits')
             continue
         if '0' in val:
+            # 0を含む場合
             print('Zero is out of range')
             continue
         break
