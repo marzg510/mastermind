@@ -4,7 +4,7 @@
 '''
 import random
 
-print("***** master mind *****")
+print("***** master mind py *****")
 
 # 正解作成
 ans = ''.join(random.sample('123456789', 4))
