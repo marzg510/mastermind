@@ -5,6 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Mastermind JS",
+      "program": "${workspaceFolder}/node/master.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node",
+      "console": "integratedTerminal",
+    },
+    {
       "name": "Go: Launch file",
       "type": "go",
       "request": "launch",
