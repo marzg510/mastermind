@@ -29,11 +29,9 @@ function readUserInput(question) {
     // 回答入力
     while (true) {
         // 数値4文字の入力を待つ
-        let digits = 0;
         let val;
         while (true) {
             val = await readUserInput("--- Enter 4 digits(1-9) :");
-            digits = Number(val);
 			if (val == "/answer") {
                 // 答えを表示する隠しコマンド
                 console.log("answer: ", ans);
@@ -42,7 +40,7 @@ function readUserInput(question) {
                 // 4文字ではない場合
                 console.log("It's not 4 digits.");
                 continue;
-            } else if (isNaN(digits)) {
+            } else if (isNaN(Number(val))) {
                 // 数字ではない場合
                 console.log("It's not digits.");
                 continue;
